@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Journey ♥</title>
+
+    <meta name="description" content="A little repository of our favorite memories.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HERO ================= -->
+
+    <header class="hero">
+
+        <div class="hero-glow"></div>
+
+        <nav class="navbar">
+            <div class="logo">
+                <span class="heart">♥</span>
+                our-journey
+            </div>
+
+            <div class="nav-status">
+                <span class="status-dot"></span>
+                Building Forever
+            </div>
+        </nav>
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                TWO DEVELOPERS · ONE REPOSITORY
+            </p>
+
+            <h1>
+                Our<br>
+                <span>Journey</span>
+            </h1>
+
+            <p class="hero-description">
+                A project built with love, patience, laughter,
+                adventures, walks, deep deep discussions and an unreasonable number of commits.
+            </p>
+
+            <div class="hero-meta">
+
+                <div>
+                    <span>STATUS</span>
+                    <strong>
+                        <i class="green-dot"></i>
+                        Building Forever
+                    </strong>
+                </div>
+
+                <div>
+                    <span>VERSION</span>
+                    <strong>∞.∞.∞</strong>
+                </div>
+
+                <div>
+                    <span>CONTRIBUTORS</span>
+                    <strong>Hassaan + Janna</strong>
+                </div>
+
+            </div>
+
+            <a href="#memories" class="scroll-button">
+                Explore our story
+                <span>↓</span>
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= INTRO ================= -->
+
+    <section class="intro section">
+
+        <div class="section-label">
+            <span>01</span>
+            README.md
+        </div>
+
+        <div class="intro-content">
+
+            <div class="terminal-line">
+                <span class="prompt">$</span>
+                cat our-story.txt
+            </div>
+
+            <h2>
+                Some projects are built with code.
+                <em>Ours was built with moments.</em>
+            </h2>
+
+            <p>
+                Somewhere along the way, two people started
+                writing a story together.
+            </p>
+
+            <p>
+                There were happy commits, unexpected bugs,
+                beautiful releases, and a lot of memories
+                that deserved to be saved somewhere.
+            </p>
+
+            <p class="signature">
+                So here they are. ♥
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MEMORIES ================= -->
+
+    <section id="memories" class="memories section">
+
+        <div class="section-label">
+            <span>02</span>
+            memories/
+        </div>
+
+        <div class="section-heading">
+
+            <div>
+                <p class="terminal-line">
+                    <span class="prompt">$</span>
+                    ls memories/
+                </p>
+
+                <h2>
+                    47 little pieces<br>
+                    of <em>us.</em>
+                </h2>
+            </div>
+
+            <p>
+                Some photos to save some special moments, days, and years.
+            </p>
+
+        </div>
+
+        <div id="photo-grid" class="photo-grid"></div>
+
+    </section>
+
+
+    <!-- ================= LIGHTBOX ================= -->
+
+    <div id="lightbox" class="lightbox">
+
+        <button id="close-lightbox" class="close-button">
+            ×
+        </button>
+
+        <button id="previous-photo" class="lightbox-arrow left">
+            ←
+        </button>
+
+        <div class="lightbox-content">
+
+            <img id="lightbox-image" src="" alt="Memory">
+
+            <div class="lightbox-caption">
+                <span id="photo-number"></span>
+            </div>
+
+        </div>
+
+        <button id="next-photo" class="lightbox-arrow right">
+            →
+        </button>
+
+    </div>
+
+
+    <!-- ================= GIT LOG ================= -->
+
+    <section class="commits section">
+
+        <div class="section-label">
+            <span>03</span>
+            git-log/
+        </div>
+
+        <div class="section-heading">
+
+            <div>
+                <p class="terminal-line">
+                    <span class="prompt">$</span>
+                    git log --our-story
+                </p>
+
+                <h2>
+                    Every important<br>
+                    <em>commit.</em>
+                </h2>
+            </div>
+
+            <p>
+                These are the dates that became part of
+                our history.
+            </p>
+
+        </div>
+
+        <div class="git-window">
+
+            <div class="window-header">
+
+                <div class="window-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <span>our-journey / commits</span>
+
+                <span class="branch">
+                    ♥ main
+                </span>
+
+            </div>
+
+            <div id="commit-list" class="commit-list"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECT =================
+
+    <section class="project section">
+
+        <div class="section-label">
+            <span>04</span>
+            project/
+        </div>
+
+        <div class="project-card">
+
+            <div class="project-top">
+
+                <div>
+                    <p class="repo-owner">
+                        ♥ you / him
+                    </p>
+
+                    <h2>Our Journey</h2>
+
+                    <p class="repo-description">
+                        The most important project we've ever worked on.
+                    </p>
+                </div>
+
+                <div class="project-status">
+                    <span class="status-dot"></span>
+                    Building Forever
+                </div>
+
+            </div>
+
+
+            <div class="project-stats">
+
+                <div>
+                    <span>PROJECT TYPE</span>
+                    <strong>Open Source Relationship</strong>
+                </div>
+
+                <div>
+                    <span>VERSION</span>
+                    <strong>∞.0</strong>
+                </div>
+
+                <div>
+                    <span>LICENSE</span>
+                    <strong>Forever</strong>
+                </div>
+
+            </div>
+
+
+            <div class="readme">
+
+                <div class="readme-header">
+                    README.md
+                </div>
+
+                <div class="readme-body">
+
+                    <h3>
+                        # Our Journey
+                    </h3>
+
+                    <p>
+                        This project was never supposed to be perfect.
+                    </p>
+
+                    <p>
+                        It was supposed to be ours.
+                    </p>
+
+                    <p>
+                        We've had successful deployments,
+                        unexpected bugs, merge conflicts,
+                        countless laughs, and more memories
+                        than we could ever fit into one repository.
+                    </p>
+
+                    <h3>
+                        ## Current Status
+                    </h3>
+
+                    <p class="success">
+                        ● Building Forever
+                    </p>
+
+                    <h3>
+                        ## Roadmap
+                    </h3>
+
+                    <ul class="roadmap">
+
+                        <li class="done">
+                            <span>✓</span>
+                            Meet
+                        </li>
+
+                        <li class="done">
+                            <span>✓</span>
+                            Fall in love
+                        </li>
+
+                        <li class="done">
+                            <span>✓</span>
+                            Build memories
+                        </li>
+
+                        <li class="done">
+                            <span>✓</span>
+                            Get engaged
+                        </li>
+
+                        <li>
+                            <span>○</span>
+                            Grow old together
+                        </li>
+
+                        <li>
+                            <span>○</span>
+                            Keep laughing
+                        </li>
+
+                        <li>
+                            <span>○</span>
+                            Keep choosing each other
+                        </li>
+
+                        <li>
+                            <span>○</span>
+                            Never stop committing
+                        </li>
+
+                    </ul>
+
+                    <h3>
+                        ## Contributors
+                    </h3>
+
+                    <div class="contributors">
+                        <span>@her</span>
+                        <span>@him</span>
+                    </div>
+
+                    <h3>
+                        ## License
+                    </h3>
+
+                    <p>
+                        Forever & Always ♥
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+-->
+    <!-- ================= BUGS ================= -->
+    <!-- 
+    <section class="bugs section">
+
+        <div class="section-label">
+            <span>05</span>
+            known-issues/
+        </div>
+
+        <div class="bugs-content">
+
+            <p class="terminal-line">
+                <span class="prompt">$</span>
+                cat known-issues.log
+            </p>
+
+            <h2>
+                Every great project<br>
+                has a few <em>bugs.</em>
+            </h2>
+
+            <div class="issues">
+
+                <div class="issue">
+                    <span>⚠</span>
+                    Cannot agree on where to eat
+                </div>
+
+                <div class="issue">
+                    <span>⚠</span>
+                    One person steals the blanket
+                </div>
+
+                <div class="issue">
+                    <span>⚠</span>
+                    "I'm not hungry" may be inaccurate
+                </div>
+
+                <div class="issue">
+                    <span>⚠</span>
+                    Occasional merge conflicts
+                </div>
+
+                <div class="issue">
+                    <span>⚠</span>
+                    Too many photos
+                </div>
+
+            </div>
+
+            <div class="bug-fix">
+
+                <p>Fix:</p>
+
+                <code>
+                    git checkout --theirs<br>
+                    git pull<br>
+                    hug
+                </code>
+
+            </div>
+
+        </div>
+
+    </section> 
+-->
+
+
+    <!-- ================= THANK YOU ================= -->
+
+    <section class="thank-you section">
+
+        <div class="thank-you-content">
+
+            <div class="heart-large">
+                ♥
+            </div>
+
+            <p class="eyebrow">
+                FINAL COMMIT
+            </p>
+
+            <h2>
+                Thank you for being<br>
+                my <em>favorite Hassaan.</em>
+            </h2>
+
+            <p class="thank-you-text">
+                Thank you for every laugh, every adventure,
+                every conversation, every ordinary day that
+                somehow became special simply because you
+                were there.
+            </p>
+
+            <p class="thank-you-text">
+                Thank you for sharing my longest chat, longest walks, deepest conversations,
+                and for making this project the most beautiful
+                thing I've ever been part of.
+            </p>
+
+            <p class="signature">
+                Here's to every version of us<br>
+                that is still waiting to be written.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FUTURE ================= -->
+
+    <section class="future section">
+
+        <div class="future-terminal">
+
+            <div class="terminal-header">
+
+                <div class="window-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <span>terminal</span>
+
+            </div>
+
+            <div class="terminal-body">
+
+                <p>
+                    <span class="prompt">$</span>
+                    git pull future
+                </p>
+
+                <p id="terminal-output" class="terminal-output">
+                    Fetching origin...
+                </p>
+
+                <p id="terminal-progress" class="terminal-output">
+                    Receiving objects: <span>100%</span>
+                </p>
+
+                <p class="terminal-output">
+                    Resolving deltas: 100%
+                </p>
+
+                <p class="terminal-success">
+                    Already up to date.
+                </p>
+
+                <div class="future-message">
+
+                    <p>
+                        Because the future hasn't happened yet.
+                    </p>
+
+                    <span>♥</span>
+
+                    <h2>
+                        See you in the next commit.
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            Built with ♥ for the most important project.
+        </p>
+
+        <p>
+            &copy; <span id="current-year"></span> Janna + Hassaan
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
