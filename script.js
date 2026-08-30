@@ -195,7 +195,7 @@ document.addEventListener("keydown", (event) => {
 
 const commits = [
     {
-        "date": "2025-05-03",
+        "date": "2025-05-02",
         "message": "initial commit : First meeting 🎉",
         "hash": "3551801"
     },
